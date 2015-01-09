@@ -4,5 +4,6 @@
 FROM dockerfile/java:oracle-java8
 MAINTAINER Alex Johnson <alex@colorandlogic.com>
 
-RUN apt-get -qq update
-RUN apt-get -qqy install tesseract-ocr
+# Install the Tesseract binaries
+RUN apt-get update && apt-get -y install \
+    tesseract-ocr
