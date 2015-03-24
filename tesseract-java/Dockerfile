@@ -1,7 +1,7 @@
 # Start with a standard Docker Java image and install tesseract and imagemagick.
 # This image is based on Ubuntu, so we can use apt-get.
 
-FROM dockerfile/java:oracle-java8
+FROM java:8
 MAINTAINER Alex Johnson <alex@colorandlogic.com>
 
 # Install the Tesseract binaries
